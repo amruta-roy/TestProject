@@ -13,14 +13,8 @@ const App = () => {
       <NavigationContainer>
         <Stack.Navigator initialRouteName="Main" >
           <Stack.Screen name="Main" component={MainScreen} options={{ headerShown: false }}/>
-          <Stack.Screen name="Profile" component={ProfileScreen} />
+          <Stack.Screen name="Profile" component={ProfileScreen} options={{ title: "Profile Details" }}/>
         </Stack.Navigator>
-        {/* <Stack.Navigator>
-        <Stack.Screen name="Main" component={MainScreen} />
-      </Stack.Navigator> */}
-        {/* <Stack.Navigator>
-          <Stack.Screen name="Main" component={MainScreen} />
-        </Stack.Navigator> */}
       </NavigationContainer>
   );
 };
